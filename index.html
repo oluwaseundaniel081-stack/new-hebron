@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Hebron Investment Limited | Innovation in Media, Music, & Computing</title>
+  <meta name="description" content="Hebron Investment Limited operates at the cutting-edge intersection of culture, technology, and media across Publishing, Music, and Computing. Explore our portfolio today.">
+  <meta name="keywords" content="Hebron Investment Limited, Publishing, Music Production, IT Services, Software Development, Audio Streaming, Tech Training, Corporate Innovation">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hebron Investment Limited | Innovation in Media, Music, & Computing">
+  <meta property="og:description" content="Driving value and synergy across Publishing, Music, and IT sectors. Operating at the intersection of culture, technology, and media.">
+  <meta property="og:image" content="images/hero_investment.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0A192F',       // Deep Navy Blue
+            primaryLight: '#112240',  // Medium Navy
+            secondary: '#0B2240',     // Dark Blue
+            accent: '#0066CC',        // Electric Blue
+            accentCyan: '#00F2FE',    // Cyan Accent
+            bgLight: '#F8FAFC',       // Slate Light
+            textDark: '#0F172A',      // Dark text
+            textBody: '#475569',      // Slate text
+          },
+          fontFamily: {
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'custom': '0 10px 35px -10px rgba(10, 25, 47, 0.08)',
+            'custom-hover': '0 20px 40px -15px rgba(10, 25, 47, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body text-textBody bg-white overflow-x-hidden antialiased">
+
+  <!-- Sticky Header & Navigation -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-350 bg-white/95 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group" aria-label="Hebron Investment Limited Home">
+        <div class="w-12 h-12 rounded-lg overflow-hidden border border-slate-100 flex items-center justify-center bg-white shadow-sm transition-transform duration-300 group-hover:scale-105">
+          <img src="images/logo.jpg" alt="Hebron Investment Limited Logo" class="object-cover w-full h-full">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-extrabold text-primary text-lg tracking-tight leading-tight">HEBRON</span>
+          <span class="text-xs font-semibold text-accent tracking-wider uppercase">INVESTMENT LTD.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav id="nav-menu" class="hidden md:flex items-center gap-8">
+        <a href="#home" class="nav-link font-medium text-sm text-primary hover:text-accent transition-colors duration-200 active">Home</a>
+        <a href="#about" class="nav-link font-medium text-sm text-primary hover:text-accent transition-colors duration-200">About Us</a>
+        <a href="#publishing" class="nav-link font-medium text-sm text-primary hover:text-accent transition-colors duration-200">Publishing</a>
+        <a href="#music" class="nav-link font-medium text-sm text-primary hover:text-accent transition-colors duration-200">Music</a>
+        <a href="#computing" class="nav-link font-medium text-sm text-primary hover:text-accent transition-colors duration-200">Computing</a>
+        <a href="#contact" class="nav-link font-medium text-sm text-primary hover:text-accent transition-colors duration-200">Contact Us</a>
+        <a href="#contact" class="bg-primary hover:bg-accent text-white px-5 py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Get Started</a>
+      </nav>
+
+      <!-- Hamburger Menu Button -->
+      <button class="md:hidden flex flex-col justify-between w-6 h-4.5 z-50 text-primary cursor-pointer focus:outline-none" id="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="w-full h-0.5 bg-current transition-all duration-300 origin-left"></span>
+        <span class="w-full h-0.5 bg-current transition-all duration-300"></span>
+        <span class="w-full h-0.5 bg-current transition-all duration-300 origin-left"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-nav" class="fixed inset-0 bg-primary/95 z-40 flex flex-col items-center justify-center gap-8 transition-all duration-300 transform translate-x-full md:hidden">
+      <a href="#home" class="mobile-link text-2xl font-semibold text-white/90 hover:text-accentCyan transition-colors">Home</a>
+      <a href="#about" class="mobile-link text-2xl font-semibold text-white/90 hover:text-accentCyan transition-colors">About Us</a>
+      <a href="#publishing" class="mobile-link text-2xl font-semibold text-white/90 hover:text-accentCyan transition-colors">Publishing</a>
+      <a href="#music" class="mobile-link text-2xl font-semibold text-white/90 hover:text-accentCyan transition-colors">Music</a>
+      <a href="#computing" class="mobile-link text-2xl font-semibold text-white/90 hover:text-accentCyan transition-colors">Computing</a>
+      <a href="#contact" class="mobile-link text-2xl font-semibold text-white/90 hover:text-accentCyan transition-colors">Contact Us</a>
+      <a href="#contact" class="mt-4 bg-accent text-white px-8 py-3 rounded-xl text-lg font-semibold tracking-wide hover:bg-accentCyan transition-colors">Get in Touch</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- 1. Hero Section (Home) -->
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center py-20 bg-gradient-to-br from-primary via-primaryLight to-secondary text-white overflow-hidden">
+      <!-- Background Graphic Layers -->
+      <div class="absolute inset-0 z-0 opacity-15 mix-blend-overlay">
+        <img src="images/hero_investment.png" alt="Hero background" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/20 blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-accentCyan/10 blur-3xl"></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-7 flex flex-col items-start text-left">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold tracking-wider text-accentCyan uppercase mb-6 backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-accentCyan animate-pulse"></span>
+              Multi-Sector Corporate Innovation
+            </span>
+            <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white mb-6 leading-tight">
+              Driving Synergy Across <span class="bg-gradient-to-r from-accentCyan to-accent bg-clip-text text-transparent">Culture, Media & Tech</span>
+            </h1>
+            <p class="text-lg text-slate-300 font-light mb-8 max-w-xl leading-relaxed">
+              Operating at the intersection of culture, technology, and media across three distinct yet interconnected sectors.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <a href="#publishing" class="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 rounded-xl text-center shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                Explore Our Portfolio
+              </a>
+              <a href="#contact" class="border border-white/20 hover:bg-white/5 text-white font-semibold px-8 py-4 rounded-xl text-center backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-1">
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-5 hidden md:block">
+            <!-- Interlocking sectors visual -->
+            <div class="relative w-full aspect-square max-w-[400px] mx-auto flex items-center justify-center">
+              <div class="absolute w-[80%] h-[80%] rounded-full border border-white/10 animate-[spin_60s_linear_infinite]"></div>
+              <div class="absolute w-[60%] h-[60%] rounded-full border border-dashed border-accentCyan/20 animate-[spin_40s_linear_infinite_reverse]"></div>
+              <!-- Sector nodes -->
+              <div class="absolute top-0 flex flex-col items-center gap-2 transform -translate-y-1/2">
+                <div class="w-14 h-14 rounded-full bg-accent/20 border border-accent/40 backdrop-blur-md flex items-center justify-center shadow-lg shadow-accent/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accentCyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <span class="text-xs font-semibold text-slate-300 tracking-wider">Publishing</span>
+              </div>
+              <div class="absolute bottom-6 left-0 flex flex-col items-center gap-2 transform -translate-x-1/4 translate-y-1/4">
+                <div class="w-14 h-14 rounded-full bg-accent/20 border border-accent/40 backdrop-blur-md flex items-center justify-center shadow-lg shadow-accent/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accentCyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                  </svg>
+                </div>
+                <span class="text-xs font-semibold text-slate-300 tracking-wider">Music</span>
+              </div>
+              <div class="absolute bottom-6 right-0 flex flex-col items-center gap-2 transform translate-x-1/4 translate-y-1/4">
+                <div class="w-14 h-14 rounded-full bg-accent/20 border border-accent/40 backdrop-blur-md flex items-center justify-center shadow-lg shadow-accent/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accentCyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span class="text-xs font-semibold text-slate-300 tracking-wider">Computing</span>
+              </div>
+              <!-- Center Hub -->
+              <div class="w-24 h-24 rounded-full bg-gradient-to-r from-accentCyan/20 to-accent/20 border border-white/20 backdrop-blur-lg flex items-center justify-center shadow-2xl relative">
+                <span class="font-heading font-extrabold text-2xl tracking-tighter text-white">HIL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Us Section -->
+    <section id="about" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-16 items-center">
+          <div class="md:col-span-6 order-2 md:order-1">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl group border border-slate-100">
+              <img src="images/corporate_office.png" alt="Hebron Corporate Office Lobby" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/25 to-transparent flex items-end p-8 text-white">
+                <div>
+                  <h3 class="font-heading font-bold text-xl mb-1">Hebron Headquarters</h3>
+                  <p class="text-sm text-slate-300 font-light">Fostering innovation and strategic asset management.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="md:col-span-6 order-1 md:order-2 flex flex-col justify-center">
+            <span class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Who We Are</span>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary mb-6 tracking-tight">
+              Versatile. Forward-Thinking. Connected.
+            </h2>
+            <p class="text-textBody font-light text-base leading-relaxed mb-6">
+              Hebron Investment Limited is a versatile and forward-thinking corporate entity that strategically operates at the intersection of culture, technology, and media. By managing a diverse portfolio, the company drives innovation and value creation across three distinct yet increasingly interconnected sectors: Publishing, Music, and Computing.
+            </p>
+            <div class="grid grid-cols-3 gap-6 border-t border-slate-100 pt-8">
+              <div>
+                <span class="block text-3xl font-extrabold text-primary">03</span>
+                <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">Divisions</span>
+              </div>
+              <div>
+                <span class="block text-3xl font-extrabold text-primary">10k+</span>
+                <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">Clients served</span>
+              </div>
+              <div>
+                <span class="block text-3xl font-extrabold text-primary">100%</span>
+                <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">Reliability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Publishing Department Section -->
+    <section id="publishing" class="py-24 bg-bgLight border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div class="max-w-xl">
+            <span class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Publishing Department</span>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary tracking-tight">
+              Empowering Authors, Enriching Readers
+            </h2>
+            <p class="text-textBody font-light mt-3 leading-relaxed">
+              Explore and acquire Hebron's flagship publications. From tech tutorials to artistic essays, read directly from our curated storefront.
+            </p>
+          </div>
+          <div class="mt-6 md:mt-0 flex gap-3">
+            <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-200 text-xs font-semibold text-primary">E-Commerce Ready</span>
+            <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-200 text-xs font-semibold text-primary">Secure Downloads</span>
+          </div>
+        </div>
+
+        <!-- Book E-commerce Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Book 1 -->
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-custom hover:shadow-custom-hover transition-all duration-300 overflow-hidden flex flex-col group">
+            <div class="aspect-[3/4] bg-slate-100 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-100">
+              <img src="images/book_digital_frontier.png" alt="The Digital Frontier Book Cover" class="h-full object-contain shadow-lg rounded transform transition-transform duration-300 group-hover:scale-[1.03]">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-xs">
+                <button class="bg-white text-primary font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:bg-slate-50 transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300 quick-view-btn" data-book-id="digital-frontier">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-accent text-xs font-semibold uppercase tracking-wider mb-2">Technology & Strategy</span>
+              <h3 class="font-heading font-bold text-lg text-primary mb-2 hover:text-accent cursor-pointer quick-view-btn" data-book-id="digital-frontier">The Digital Frontier</h3>
+              <p class="text-sm text-textBody font-light leading-relaxed mb-6 flex-grow">
+                A comprehensive guide to managing cross-industry transformations at the digital level. Essential reading for corporate innovators.
+              </p>
+              <div class="flex items-center justify-between border-t border-slate-100 pt-4 mt-auto">
+                <span class="text-xl font-extrabold text-primary">&#8358;8,500 <span class="text-xs text-slate-400 font-light line-through">&#8358;10,000</span></span>
+                <button class="bg-accent hover:bg-accent/90 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition-colors buy-now-btn" data-item-name="The Digital Frontier" data-item-price="8500" data-item-img="images/book_digital_frontier.png">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 2 -->
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-custom hover:shadow-custom-hover transition-all duration-300 overflow-hidden flex flex-col group">
+            <div class="aspect-[3/4] bg-slate-100 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-100">
+              <img src="images/book_harmonic_synergy.png" alt="Harmonic Synergy Book Cover" class="h-full object-contain shadow-lg rounded transform transition-transform duration-300 group-hover:scale-[1.03]">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-xs">
+                <button class="bg-white text-primary font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:bg-slate-50 transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300 quick-view-btn" data-book-id="harmonic-synergy">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-accent text-xs font-semibold uppercase tracking-wider mb-2">Music & Culture</span>
+              <h3 class="font-heading font-bold text-lg text-primary mb-2 hover:text-accent cursor-pointer quick-view-btn" data-book-id="harmonic-synergy">Harmonic Synergy</h3>
+              <p class="text-sm text-textBody font-light leading-relaxed mb-6 flex-grow">
+                Exploring the psychological and cultural impacts of modern music design, digital streaming, and contemporary culture.
+              </p>
+              <div class="flex items-center justify-between border-t border-slate-100 pt-4 mt-auto">
+                <span class="text-xl font-extrabold text-primary">&#8358;7,000</span>
+                <button class="bg-accent hover:bg-accent/90 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition-colors buy-now-btn" data-item-name="Harmonic Synergy" data-item-price="7000" data-item-img="images/book_harmonic_synergy.png">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 3 -->
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-custom hover:shadow-custom-hover transition-all duration-300 overflow-hidden flex flex-col group">
+            <div class="aspect-[3/4] bg-slate-100 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-100">
+              <img src="images/book_modern_algorithms.png" alt="Modern Algorithms Book Cover" class="h-full object-contain shadow-lg rounded transform transition-transform duration-300 group-hover:scale-[1.03]">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-xs">
+                <button class="bg-white text-primary font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:bg-slate-50 transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300 quick-view-btn" data-book-id="modern-algorithms">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-accent text-xs font-semibold uppercase tracking-wider mb-2">IT & Computing</span>
+              <h3 class="font-heading font-bold text-lg text-primary mb-2 hover:text-accent cursor-pointer quick-view-btn" data-book-id="modern-algorithms">Modern Algorithms</h3>
+              <p class="text-sm text-textBody font-light leading-relaxed mb-6 flex-grow">
+                A structured reference book detailing modern programming patterns, cloud systems, and high-performance algorithms.
+              </p>
+              <div class="flex items-center justify-between border-t border-slate-100 pt-4 mt-auto">
+                <span class="text-xl font-extrabold text-primary">&#8358;9,500 <span class="text-xs text-slate-400 font-light line-through">&#8358;11,200</span></span>
+                <button class="bg-accent hover:bg-accent/90 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition-colors buy-now-btn" data-item-name="Modern Algorithms" data-item-price="9500" data-item-img="images/book_modern_algorithms.png">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Music Department Section -->
+    <section id="music" class="py-24 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+          
+          <div class="lg:col-span-5 flex flex-col justify-center">
+            <span class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Music Department</span>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary tracking-tight">
+              Contemporary Sounds, Redefined
+            </h2>
+            <p class="text-textBody font-light mt-4 leading-relaxed mb-6">
+              Hebron Music manages independent artists, audio production workflows, and digital catalog distribution. Listen to a showcase of our tracks using our integrated custom HTML5 player.
+            </p>
+            
+            <div class="flex items-center gap-4 p-4 rounded-xl border border-slate-100 bg-bgLight">
+              <span class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </span>
+              <div>
+                <span class="text-sm font-bold text-primary block">High Quality Audio</span>
+                <span class="text-xs font-light text-slate-500">Uncompromised streaming format.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- custom Audio Player interface -->
+          <div class="lg:col-span-7">
+            <div class="bg-gradient-to-br from-primary to-primaryLight text-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/5 relative overflow-hidden">
+              <div class="absolute -right-20 -top-20 w-48 h-48 bg-accent/20 rounded-full blur-2xl"></div>
+              
+              <!-- Player Header / Currently Playing -->
+              <div class="flex flex-col sm:flex-row gap-6 items-center mb-8 pb-6 border-b border-white/10">
+                <div class="w-24 h-24 rounded-2xl overflow-hidden shadow-lg border border-white/10 shrink-0 relative group">
+                  <img id="current-track-artwork" src="images/album_afrobeat_horizons.png" alt="Track Art" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <!-- Music waves animation placeholder -->
+                    <div class="flex gap-0.5 items-end h-6" id="player-animation-waves">
+                      <span class="w-1 bg-accentCyan h-2 animate-[bar_1.2s_ease-in-out_infinite]"></span>
+                      <span class="w-1 bg-accentCyan h-4 animate-[bar_1s_ease-in-out_infinite_0.2s]"></span>
+                      <span class="w-1 bg-accentCyan h-3 animate-[bar_1.4s_ease-in-out_infinite_0.4s]"></span>
+                      <span class="w-1 bg-accentCyan h-5 animate-[bar_0.8s_ease-in-out_infinite_0.1s]"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center sm:text-left flex-grow">
+                  <span class="text-xs font-semibold text-accentCyan uppercase tracking-widest block mb-1">Now Streaming</span>
+                  <h3 id="current-track-title" class="font-heading font-extrabold text-xl mb-1 tracking-tight">Afrobeat Horizons</h3>
+                  <p id="current-track-artist" class="text-sm text-slate-400 font-light">Hebron Studio Band</p>
+                </div>
+              </div>
+
+              <!-- Custom Audio Controls -->
+              <div class="flex flex-col gap-5">
+                <!-- Progress bar -->
+                <div class="flex flex-col gap-1.5">
+                  <div class="relative w-full h-1.5 bg-white/15 rounded-full cursor-pointer" id="progress-container">
+                    <div class="absolute top-0 left-0 h-full bg-accentCyan rounded-full w-0" id="progress-bar"></div>
+                  </div>
+                  <div class="flex justify-between text-xs text-slate-400 font-medium">
+                    <span id="time-current">0:00</span>
+                    <span id="time-duration">3:12</span>
+                  </div>
+                </div>
+
+                <!-- Playback controls -->
+                <div class="flex items-center justify-between sm:justify-center gap-8 py-2">
+                  <button id="player-prev" class="text-slate-400 hover:text-white transition-colors cursor-pointer" aria-label="Previous Track">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                    </svg>
+                  </button>
+                  <button id="player-play-pause" class="w-16 h-16 rounded-full bg-accentCyan hover:bg-accentCyan/90 text-primary flex items-center justify-center shadow-lg hover:scale-105 transition-all cursor-pointer" aria-label="Play/Pause">
+                    <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                  </button>
+                  <button id="player-next" class="text-slate-400 hover:text-white transition-colors cursor-pointer" aria-label="Next Track">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M6 18l8.5-6L6 6zm9-12h2v12h-2z"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Volume Control & Extras -->
+                <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                  <div class="flex items-center gap-2.5 w-[45%]">
+                    <button id="player-mute" class="text-slate-400 hover:text-white transition-colors" aria-label="Mute/Unmute">
+                      <svg id="volume-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                      </svg>
+                      <svg id="mute-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15zm11.314-7.071a1 1 0 011.414 0L20 9.586l1.707-1.707a1 1 0 011.414 1.414L21.414 11l1.707 1.707a1 1 0 01-1.414 1.414L20 12.414l-1.707 1.707a1 1 0 01-1.414-1.414L18.586 11l-1.707-1.707a1 1 0 010-1.414z" />
+                      </svg>
+                    </button>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.8" class="w-full h-1 bg-white/20 rounded-lg appearance-none cursor-pointer accent-accentCyan focus:outline-none" aria-label="Adjust Volume">
+                  </div>
+                  
+                  <div class="text-right">
+                    <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Format: FLAC / 24-bit</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tracklist View -->
+              <div class="mt-8 pt-6 border-t border-white/10 flex flex-col gap-2 max-h-[190px] overflow-y-auto custom-scrollbar" id="player-tracklist">
+                
+                <!-- Track item 1 -->
+                <div class="track-item active flex items-center justify-between p-2.5 rounded-xl cursor-pointer hover:bg-white/5 transition-colors border border-transparent" data-track-index="0">
+                  <div class="flex items-center gap-3.5">
+                    <span class="text-xs font-semibold text-slate-500 w-4 track-num text-center">01</span>
+                    <div>
+                      <h4 class="font-semibold text-sm track-title">Afrobeat Horizons</h4>
+                      <p class="text-xs text-slate-400 font-light track-artist">Hebron Studio Band</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="text-xs text-slate-400 font-medium track-duration">3:12</span>
+                    <span class="track-status-icon text-accentCyan">
+                      <!-- Active animation or small play icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Track item 2 -->
+                <div class="track-item flex items-center justify-between p-2.5 rounded-xl cursor-pointer hover:bg-white/5 transition-colors border border-transparent" data-track-index="1">
+                  <div class="flex items-center gap-3.5">
+                    <span class="text-xs font-semibold text-slate-500 w-4 track-num text-center">02</span>
+                    <div>
+                      <h4 class="font-semibold text-sm track-title">Acoustic Whispers</h4>
+                      <p class="text-xs text-slate-400 font-light track-artist">Hebron Acoustic Trio</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="text-xs text-slate-400 font-medium track-duration">3:38</span>
+                    <span class="track-status-icon text-slate-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Track item 3 -->
+                <div class="track-item flex items-center justify-between p-2.5 rounded-xl cursor-pointer hover:bg-white/5 transition-colors border border-transparent" data-track-index="2">
+                  <div class="flex items-center gap-3.5">
+                    <span class="text-xs font-semibold text-slate-500 w-4 track-num text-center">03</span>
+                    <div>
+                      <h4 class="font-semibold text-sm track-title">Ambient Tech</h4>
+                      <p class="text-xs text-slate-400 font-light track-artist">H.I.L. Electronic Lab</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="text-xs text-slate-400 font-medium track-duration">5:44</span>
+                    <span class="track-status-icon text-slate-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Computing Department Section -->
+    <section id="computing" class="py-24 bg-bgLight border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col items-center text-center mb-16 max-w-2xl mx-auto">
+          <span class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Computing Department</span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary tracking-tight">
+            High-Performance IT & Tech Solutions
+          </h2>
+          <p class="text-textBody font-light mt-4 leading-relaxed">
+            From deploying scalable enterprise software products to distributing enterprise computing hardware, we deliver tailored computing architectures.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-12 items-start">
+          <!-- Services Listing -->
+          <div class="md:col-span-6 grid sm:grid-cols-2 gap-6">
+            
+            <!-- Service 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-custom hover:shadow-custom-hover transition-all duration-300 group">
+              <span class="w-12 h-12 rounded-xl bg-accent/5 flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </span>
+              <h3 class="font-heading font-bold text-lg text-primary mb-2.5">Software Development</h3>
+              <p class="text-xs text-textBody font-light leading-relaxed">
+                Build scalable, robust cloud web and mobile apps, custom database systems, and secure application program interfaces (APIs).
+              </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-custom hover:shadow-custom-hover transition-all duration-300 group">
+              <span class="w-12 h-12 rounded-xl bg-accent/5 flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </span>
+              <h3 class="font-heading font-bold text-lg text-primary mb-2.5">Hardware Supply</h3>
+              <p class="text-xs text-textBody font-light leading-relaxed">
+                Supply of high-performance computing units, secure server components, and enterprise networking hardware.
+              </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-custom hover:shadow-custom-hover transition-all duration-300 group">
+              <span class="w-12 h-12 rounded-xl bg-accent/5 flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </span>
+              <h3 class="font-heading font-bold text-lg text-primary mb-2.5">IT Consulting</h3>
+              <p class="text-xs text-textBody font-light leading-relaxed">
+                Cloud migration audits, database tuning strategies, cybersecurity compliance audits, and network scaling designs.
+              </p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-custom hover:shadow-custom-hover transition-all duration-300 group">
+              <span class="w-12 h-12 rounded-xl bg-accent/5 flex items-center justify-center text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </span>
+              <h3 class="font-heading font-bold text-lg text-primary mb-2.5">Tech Training</h3>
+              <p class="text-xs text-textBody font-light leading-relaxed">
+                Practical, corporate-tailored bootcamps in modern software languages, security basics, and agile project cycles.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Quote Request Form -->
+          <div class="md:col-span-6 w-full">
+            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-2xl relative">
+              <div class="absolute -top-3.5 -right-3.5 w-7 h-7 bg-accentCyan rounded-full"></div>
+              <h3 class="font-heading font-extrabold text-xl text-primary mb-2 tracking-tight">Request a Quote</h3>
+              <p class="text-xs text-slate-400 font-light mb-6">Receive a custom IT architecture proposal within 24 working hours.</p>
+              
+              <form id="quote-form" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div class="flex flex-col gap-1.5">
+                    <label for="quote-name" class="text-xs font-bold text-primary">Full Name *</label>
+                    <input type="text" id="quote-name" required class="px-4 py-3 bg-bgLight rounded-xl border border-slate-100 text-sm font-light text-textDark focus:border-accent focus:bg-white transition-colors" placeholder="e.g. John Doe">
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label for="quote-email" class="text-xs font-bold text-primary">Work Email *</label>
+                    <input type="email" id="quote-email" required class="px-4 py-3 bg-bgLight rounded-xl border border-slate-100 text-sm font-light text-textDark focus:border-accent focus:bg-white transition-colors" placeholder="e.g. john@company.com">
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div class="flex flex-col gap-1.5">
+                    <label for="quote-company" class="text-xs font-bold text-primary">Company Name</label>
+                    <input type="text" id="quote-company" class="px-4 py-3 bg-bgLight rounded-xl border border-slate-100 text-sm font-light text-textDark focus:border-accent focus:bg-white transition-colors" placeholder="e.g. Hebron Ltd">
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label for="quote-service" class="text-xs font-bold text-primary">Required Service *</label>
+                    <select id="quote-service" required class="px-4 py-3 bg-bgLight rounded-xl border border-slate-100 text-sm font-light text-textDark focus:border-accent focus:bg-white transition-colors appearance-none cursor-pointer">
+                      <option value="" disabled selected>Select service</option>
+                      <option value="software-dev">Software Development</option>
+                      <option value="hardware-supply">Hardware Supply</option>
+                      <option value="it-consulting">IT Consulting</option>
+                      <option value="tech-training">Professional Tech Training</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                  <label for="quote-description" class="text-xs font-bold text-primary">Project Description *</label>
+                  <textarea id="quote-description" required rows="3" class="px-4 py-3 bg-bgLight rounded-xl border border-slate-100 text-sm font-light text-textDark focus:border-accent focus:bg-white transition-colors resize-none" placeholder="Provide details on project size, goals and features..."></textarea>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div class="flex flex-col gap-1.5">
+                    <label for="quote-budget" class="text-xs font-bold text-primary">Est. Budget Range *</label>
+                    <select id="quote-budget" required class="px-4 py-3 bg-bgLight rounded-xl border border-slate-100 text-sm font-light text-textDark focus:border-accent focus:bg-white transition-colors appearance-none cursor-pointer">
+                      <option value="" disabled selected>Select range</option>
+                      <option value="under-5m">Under &#8358;5 Million</option>
+                      <option value="5m-20m">&#8358;5M - &#8358;20 Million</option>
+                      <option value="20m-50m">&#8358;20M - &#8358;50 Million</option>
+                      <option value="above-50m">Above &#8358;50 Million</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label for="quote-urgency" class="text-xs font-bold text-primary">Urgency Level *</label>
+                    <select id="quote-urgency" required class="px-4 py-3 bg-bgLight rounded-xl border border-slate-100 text-sm font-light text-textDark focus:border-accent focus:bg-white transition-colors appearance-none cursor-pointer">
+                      <option value="" disabled selected>Select timeline</option>
+                      <option value="immediate">Immediate (Within 1 month)</option>
+                      <option value="moderate">Moderate (1 - 3 months)</option>
+                      <option value="longterm">Future planning (3+ months)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="w-full bg-primary hover:bg-accent text-white font-semibold py-3.5 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg transform active:scale-[0.99] mt-2">
+                  Submit Proposal Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact Us Section -->
+    <section id="contact" class="py-24 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-16">
+          <div class="md:col-span-5 flex flex-col justify-center">
+            <span class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Get In Touch</span>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary tracking-tight mb-6">
+              Let's Co-create the Future.
+            </h2>
+            <p class="text-textBody font-light text-base leading-relaxed mb-8">
+              Whether you want to publish a book, produce an album, or deploy robust computing hardware, Hebron Investment Limited is ready to partner with you.
+            </p>
+
+            <div class="space-y-6">
+              <!-- Gmail Info -->
+              <div class="flex items-center gap-4 group">
+                <span class="w-12 h-12 rounded-xl bg-accent/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="text-xs text-slate-500 font-bold uppercase tracking-wider block">Gmail Address</span>
+                  <a href="mailto:hebroninvestmentlimited@gmail.com" class="text-sm font-semibold text-primary hover:text-accent transition-colors">
+                    hebroninvestmentlimited@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Phone Numbers -->
+              <div class="flex items-center gap-4 group">
+                <span class="w-12 h-12 rounded-xl bg-accent/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="text-xs text-slate-500 font-bold uppercase tracking-wider block">Phone & WhatsApp Lines</span>
+                  <div class="flex flex-col">
+                    <a href="tel:+2348060810588" class="text-sm font-semibold text-primary hover:text-accent transition-colors">08060810588</a>
+                    <a href="tel:+2347080302385" class="text-sm font-semibold text-primary hover:text-accent transition-colors">07080302385</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Messaging Form -->
+          <div class="md:col-span-7">
+            <div class="bg-bgLight border border-slate-100 rounded-3xl p-8 flex flex-col justify-between h-full relative overflow-hidden">
+              <div class="absolute right-0 bottom-0 w-32 h-32 bg-accent/5 rounded-full blur-xl"></div>
+              <div>
+                <h3 class="font-heading font-extrabold text-xl text-primary mb-2.5">Send a Direct Message</h3>
+                <p class="text-sm text-textBody font-light mb-6">If you have other operational inquiries or custom partnership offers, write to us directly.</p>
+                
+                <form id="contact-form" class="space-y-4">
+                  <div class="flex flex-col gap-1.5">
+                    <label for="contact-name" class="text-xs font-bold text-primary">Your Name *</label>
+                    <input type="text" id="contact-name" required class="px-4 py-3 bg-white rounded-xl border border-slate-200/60 text-sm font-light text-textDark focus:border-accent focus:outline-none transition-colors" placeholder="e.g. Jane Doe">
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label for="contact-email" class="text-xs font-bold text-primary">Your Email *</label>
+                    <input type="email" id="contact-email" required class="px-4 py-3 bg-white rounded-xl border border-slate-200/60 text-sm font-light text-textDark focus:border-accent focus:outline-none transition-colors" placeholder="e.g. jane@gmail.com">
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label for="contact-message" class="text-xs font-bold text-primary">Message *</label>
+                    <textarea id="contact-message" required rows="4" class="px-4 py-3 bg-white rounded-xl border border-slate-200/60 text-sm font-light text-textDark focus:border-accent focus:outline-none transition-colors resize-none" placeholder="Write your message here..."></textarea>
+                  </div>
+                  <button type="submit" class="bg-primary hover:bg-accent text-white font-semibold px-8 py-3.5 rounded-xl transition-all duration-300 shadow-md">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-primary text-slate-400 py-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 mb-12">
+      <!-- Col 1: About Corporate -->
+      <div class="col-span-2 md:col-span-1">
+        <a href="#home" class="flex items-center gap-2.5 mb-6">
+          <div class="w-10 h-10 rounded-lg overflow-hidden border border-white/10 flex items-center justify-center bg-white shadow-sm shrink-0">
+            <img src="images/logo.jpg" alt="Hebron Logo" class="object-cover w-full h-full">
+          </div>
+          <span class="font-heading font-extrabold text-white text-md tracking-tight">HEBRON</span>
+        </a>
+        <p class="text-xs font-light leading-relaxed max-w-[220px] text-slate-500">
+          Strategic investments driving cross-industry innovations across media, acoustics, and software solutions.
+        </p>
+      </div>
+
+      <!-- Col 2: Services -->
+      <div>
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-6">Our Sectors</h4>
+        <ul class="space-y-3.5 text-xs font-light">
+          <li><a href="#publishing" class="hover:text-accentCyan transition-colors">Hebron Publishing</a></li>
+          <li><a href="#music" class="hover:text-accentCyan transition-colors">Hebron Music Studio</a></li>
+          <li><a href="#computing" class="hover:text-accentCyan transition-colors">Hebron IT Solutions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Quick Links -->
+      <div>
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-6">Quick Links</h4>
+        <ul class="space-y-3.5 text-xs font-light">
+          <li><a href="#home" class="hover:text-accentCyan transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-accentCyan transition-colors">About Us</a></li>
+          <li><a href="#contact" class="hover:text-accentCyan transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Corporate Info -->
+      <div>
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-6">Corporate Office</h4>
+        <p class="text-xs font-light leading-relaxed text-slate-500 mb-2">
+          Hebron Investment Ltd.<br>
+          Nigeria.
+        </p>
+        <span class="text-xs text-white font-semibold">RC: 1781875</span>
+      </div>
+    </div>
+
+    <!-- Bottom footer details -->
+    <div class="max-w-7xl mx-auto px-6 border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light text-slate-500">
+      <span>&copy; 2026 Hebron Investment Limited. All rights reserved.</span>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-accentCyan">Privacy Policy</a>
+        <a href="#" class="hover:text-accentCyan">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Checkout Drawer / Cart Modal Placeholder -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 overflow-hidden hidden" aria-modal="true" role="dialog">
+    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-xs transition-opacity" id="checkout-modal-backdrop"></div>
+    <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
+      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col transform transition-transform duration-350 translate-x-full" id="checkout-drawer">
+        <div class="flex-1 py-6 overflow-y-auto px-6">
+          <div class="flex items-start justify-between pb-6 border-b border-slate-100">
+            <h2 class="text-lg font-bold text-primary font-heading">Secure Checkout</h2>
+            <button class="text-slate-400 hover:text-slate-500" id="close-checkout" aria-label="Close Checkout">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="mt-6 flex flex-col gap-6">
+            <!-- Selected Book Info -->
+            <div class="flex items-center gap-4 p-4 bg-bgLight rounded-2xl border border-slate-100">
+              <div class="w-16 h-20 bg-slate-200 rounded overflow-hidden shadow shrink-0">
+                <img id="checkout-item-img" src="images/book_digital_frontier.png" alt="Book cover" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h3 id="checkout-item-name" class="font-heading font-bold text-primary text-sm">The Digital Frontier</h3>
+                <span id="checkout-item-price" class="text-accent text-sm font-extrabold">&#8358;8,500</span>
+              </div>
+            </div>
+
+            <!-- Client Checkout Details -->
+            <form id="checkout-form" class="space-y-4 pt-2">
+              <div class="flex flex-col gap-1.5">
+                <label for="checkout-name" class="text-xs font-bold text-primary">Your Name *</label>
+                <input type="text" id="checkout-name" required class="px-4 py-3 bg-bgLight border border-slate-100 rounded-xl text-sm font-light focus:border-accent focus:bg-white focus:outline-none transition-colors" placeholder="e.g. John Doe">
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <label for="checkout-email" class="text-xs font-bold text-primary">Your Email *</label>
+                <input type="email" id="checkout-email" required class="px-4 py-3 bg-bgLight border border-slate-100 rounded-xl text-sm font-light focus:border-accent focus:bg-white focus:outline-none transition-colors" placeholder="e.g. john@example.com">
+              </div>
+              
+              <!-- Payment Method Selection -->
+              <div class="flex flex-col gap-2 pt-2">
+                <label class="text-xs font-bold text-primary">Payment Method *</label>
+                <div class="grid grid-cols-2 gap-3">
+                  <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200/80 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+                    <div class="flex items-center gap-2">
+                      <input type="radio" name="payment" value="paystack" checked class="accent-accent">
+                      <span class="text-xs font-semibold text-primary">Paystack / Card</span>
+                    </div>
+                  </label>
+                  <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200/80 cursor-pointer bg-white hover:bg-slate-50 transition-colors">
+                    <div class="flex items-center gap-2">
+                      <input type="radio" name="payment" value="bank" class="accent-accent">
+                      <span class="text-xs font-semibold text-primary">Bank Transfer</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="border-t border-slate-100 pt-6 mt-6">
+                <div class="flex justify-between text-base font-bold text-primary mb-4">
+                  <span>Total Amount:</span>
+                  <span id="checkout-total">&#8358;8,500</span>
+                </div>
+                <button type="submit" class="w-full bg-accent hover:bg-accent/90 text-white font-semibold py-4 rounded-xl text-sm transition-all duration-300 shadow-md hover:shadow-lg">
+                  Complete Secure Payment
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book Details Modal -->
+  <div id="details-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden" aria-modal="true" role="dialog">
+    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-xs" id="details-modal-backdrop"></div>
+    <div class="bg-white rounded-3xl max-w-lg w-full p-8 shadow-2xl border border-slate-100 z-10 mx-6 relative transform scale-95 transition-all duration-300 opacity-0" id="details-card">
+      <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-500 cursor-pointer" id="close-details" aria-label="Close Details">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="grid sm:grid-cols-12 gap-6">
+        <div class="sm:col-span-5 bg-slate-100 rounded-2xl overflow-hidden p-4 flex items-center justify-center">
+          <img id="details-img" src="" alt="Book Cover" class="h-44 object-contain shadow-md rounded">
+        </div>
+        <div class="sm:col-span-7 flex flex-col justify-between">
+          <div>
+            <span id="details-tag" class="text-accent text-xs font-semibold uppercase tracking-wider block mb-1"></span>
+            <h3 id="details-title" class="font-heading font-extrabold text-xl text-primary tracking-tight"></h3>
+            <p id="details-desc" class="text-sm text-textBody font-light mt-3 leading-relaxed"></p>
+          </div>
+          <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+            <span id="details-price" class="text-xl font-extrabold text-primary"></span>
+            <button id="details-buy-btn" class="bg-accent hover:bg-accent/90 text-white font-semibold text-xs px-5 py-2.5 rounded-lg transition-colors">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-primary/95 backdrop-blur-md text-white border border-white/5 shadow-2xl px-5 py-4 rounded-2xl flex items-center gap-3.5 max-w-sm transform translate-y-24 opacity-0 transition-all duration-350">
+    <span class="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accentCyan shrink-0" id="toast-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
+    </span>
+    <div>
+      <h4 class="font-bold text-sm" id="toast-title">Success</h4>
+      <p class="text-xs text-slate-400 font-light mt-0.5" id="toast-message">Operation successful.</p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Chat Widget -->
+  <a href="https://wa.me/2348060810588?text=Hello%20Hebron%20Investment%20Limited,%20I%20would%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-6 z-40 bg-[#25D366] hover:bg-[#20ba59] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-105 transition-all group" aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.794 1.451 5.477 0 9.932-4.455 9.935-9.934.002-2.656-1.03-5.153-2.906-7.03C16.594 1.764 14.09 0.73 11.433 0.73c-5.48 0-9.938 4.457-9.94 9.938-.001 1.77.464 3.497 1.349 5.03l-.995 3.636 3.73-.978L6.647 19.15zM17.487 14.39c-.3-.15-1.774-.875-2.048-.975-.274-.1-.474-.15-.674.15-.2.3-.774.975-.95 1.175-.175.2-.35.225-.65.075-1.205-.6-2.012-1.1-2.813-2.484-.213-.37.213-.343.61-1.137.067-.133.033-.25-.017-.35-.05-.1-.475-1.146-.65-1.567-.172-.413-.346-.356-.475-.356-.123-.002-.264-.002-.406-.002-.14 0-.37.053-.564.26-.194.207-.74.724-.74 1.766s.758 2.045.864 2.186c.106.14 1.492 2.28 3.614 3.19.505.217.9.347 1.207.444.507.16 1.033.137 1.422.08.433-.06 1.774-.725 2.023-1.393.25-.668.25-1.242.175-1.392-.075-.15-.275-.25-.575-.4z"/>
+    </svg>
+    <!-- Tooltip -->
+    <span class="absolute left-16 bg-primary text-white text-xs font-semibold px-3 py-2 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-300 shadow-xl border border-white/5 whitespace-nowrap">Chat on WhatsApp</span>
+  </a>
+
+  <!-- app.js Script -->
+  <script src="app.js"></script>
+</body>
+</html>

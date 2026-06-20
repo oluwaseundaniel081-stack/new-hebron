@@ -1,0 +1,164 @@
+/*
+===================================================
+  HEBRON INVESTMENT LIMITED - BRAND STYLING
+  Custom CSS Style Sheet (styles.css)
+===================================================
+*/
+
+/* Base Layout Tweaks */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Accounts for fixed header */
+}
+
+/* Custom Scrollbar for modern feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Scrollbar for custom tracklist list container */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Active Nav Link Styling */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066CC;
+  transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link.active {
+  color: #0066CC;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Sticky Header Scrolled Effect */
+header#header.scrolled {
+  height: 70px;
+  box-shadow: 0 10px 30px -10px rgba(10, 25, 47, 0.08);
+  border-color: rgba(226, 232, 240, 0.8);
+}
+header#header.scrolled .logo-img-wrapper {
+  transform: scale(0.95);
+}
+
+/* Mobile Hamburger Animation */
+#menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-15px);
+}
+#menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Scroll Reveal Classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Audio Player Animations & Classes */
+@keyframes bar {
+  0%, 100% {
+    height: 6px;
+  }
+  50% {
+    height: 20px;
+  }
+}
+.animate-wave-bar {
+  animation: bar 1.2s ease-in-out infinite;
+}
+
+.track-item.active {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 242, 254, 0.15);
+}
+.track-item.active .track-title {
+  color: #00F2FE;
+}
+.track-item.active .track-num {
+  color: #00F2FE;
+}
+
+/* Volume input range styling */
+#volume-slider::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.15);
+  height: 4px;
+  border-radius: 2px;
+}
+#volume-slider::-webkit-slider-thumb {
+  margin-top: -4px;
+}
+
+/* Book Details Modal Transitions */
+#details-modal.active #details-card {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Cart drawer open state */
+#checkout-modal.active #checkout-drawer {
+  transform: translateX(0);
+}
+
+/* Dynamic backdrop blur class */
+.backdrop-blur-xs {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* WhatsApp pulse background */
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+a[aria-label="Chat on WhatsApp"] {
+  animation: pulse-green 2s infinite;
+}
